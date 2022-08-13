@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ <mapper namespace="com.mome.myapp.dao.RankingDAO">
+ 
+ <select id="getRanking" resultType="RankingVO" parameterType="double">
+		select foodname, rating, AVG( rating ) as avg_rating from ranking group by foodname 
+		order by AVG( rating ) desc limit4
+</select>
+ 
+ 
+ 
+ 
+ 
+ </mapper>
