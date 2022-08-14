@@ -4,13 +4,25 @@
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
  <mapper namespace="com.mome.myapp.dao.RankingDAO">
  
- <select id="getRanking" resultType="RankingVO" parameterType="double">
+ <select id="getDetail">
+ 	select distinct ranking.foodname, menu.detail from ranking, menu where ranking.foodname = menu.foodname;
+ </select>
+ 
+ <select id="avg_Rating" resultType="RankingVO">
+ 	select AVG( rating ) as avg_rating FROM ranking GROUP BY foodname
+	order by AVG( rating ) DESC limit 4;
+ </select>
+ <!-- 
+ <select id="getRanking" resultType="RankingVO">
 		select foodname, rating, AVG( rating ) as avg_rating from ranking group by foodname 
 		order by AVG( rating ) desc limit4
 </select>
- 
- 
- 
- 
+  -->
+  <!-- 
+ <select id="getDeatil">
+	 select distinct ranking.foodname, menu.detail 
+	 from mome.ranking, mome.menu where ranking.foodname = ${menu.foodname}; 
+ </select>
+  -->
  
  </mapper>

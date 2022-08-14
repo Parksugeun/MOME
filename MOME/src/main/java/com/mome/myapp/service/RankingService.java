@@ -1,8 +1,12 @@
 package com.mome.myapp.service;
 
+import java.util.List;
+
 import com.mome.myapp.vo.RankingVO;
 
 public interface RankingService {
-	//랭킹 데이터 가져오기
-	public RankingVO getRanking(double rating);
+	//레이팅 평균값
+	public List<RankingVO> avg_Rating(RankingVO rVO);
+	//음식 설명가져오기
+	public String getDetail(RankingVO vo);
 }

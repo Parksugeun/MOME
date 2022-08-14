@@ -19,19 +19,19 @@
 	<div id="mainMenu1">
 		<ul>	
 			<li><a href="/#">MOME</a></li>
-			<li><a href="/ranking/rankingform">MOME랭킹</a></li>
-			<li><a href="#">맞춤메뉴추천</a></li>
+			<li><a href="/ranking/rankingForm">MOME랭킹</a></li>
+			<li><a href="/ranking/rankingMome">맞춤메뉴추천</a></li>
 			<li><a href="/community/communityList">자유게시판</a></li>
 			<li><c:if test="${logStatus!='Y' }">
 							<!-- 로그인 안했을 때 -->
 							<a href="/member/login" class="menu-logtxt">로그인</a>
 							<a href="/member/memberForm" class="menu-jointxt">회원가입</a>
-						</c:if></li>
+				</c:if></li>		
 			<li><c:if test="${logStatus=='Y' }">
 						<!-- 로그인 했을 때 -->
 							<a href="/member/logout" class="menu-logouttxt">로그아웃</a>
 							<a href="/member/memberEdit" class="menu-mypage">마이페이지</a>
 							
-						</c:if></li>
+				</c:if></li>		
 		</ul>	
 	</div>

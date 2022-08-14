@@ -22,11 +22,12 @@ body, ul, li{
 	border-radius:10px;
 	overflow:auto;
 	width:1200px;
-	height: 750px;
+	height: 650px;
 }
 #community1{
 	width:1200px;
 	margin: 0 50 0 0;
+	padding: 0 10 0 10;
 }
 #boardview1{
 	background-color:white;
@@ -129,12 +130,17 @@ a:link, a:visited, a:hover{
 	float: right;
 }
 #searchfrm1{
-	margin:10px;
+	margin:10 0 300 50;
 }
 #listsearch1{
-	padding:150 0 1 10;
-
-	margin: 100 200 -80 10;
+	height:50px;
+	width:700px;
+}
+#write1{
+	float:right;
+	height:70px;
+	width:250px;
+	margin: 0 auto 100 auto;
 }
 #searchword1 {
   width: 300px;
@@ -167,17 +173,14 @@ a:link, a:visited, a:hover{
 #mainMenu1 ul{
 	overflow:auto;
 }
-#write1{
-	text-align:right;
 
-}
 
 #header1{
 	width:1200px;
 	text-align:center;
 	overflow:auto;
 	margin: 0 auto;
-	height: 200px;
+	height: 150px;
 }
 #nav1{
 	width: 1200px;
@@ -198,7 +201,6 @@ a:link, a:visited, a:hover{
 	overflow:hidden;
 	float:left;
 	height:600px;
-	background-color:blue;
 	text-align:center;
 	
 
@@ -207,15 +209,14 @@ a:link, a:visited, a:hover{
 	width:50%;
 	height:600px;
 	float:right;
-	background-color:red;
 	overflow:hidden;
 	text-align:center;
 }
 .h11{
 	text-align:center;
 	font-family: 'Jua', sans-serif;
-	height:150px;
-	line-height:150px;
+	line-height:100px;
+	height:100px;
 }
 .h12{
 	text-align:center;

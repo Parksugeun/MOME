@@ -12,7 +12,7 @@
 		order by no desc
 		limit ${onePageRecord} offset ${offsetPoint}
 	</select>
-		<insert id="CommunityWriteOk">
+	<insert id="CommunityWriteOk">
 		insert into community(nickname, subject, content )
 		values(#{nickname}, #{subject}, #{content} )
 	</insert>

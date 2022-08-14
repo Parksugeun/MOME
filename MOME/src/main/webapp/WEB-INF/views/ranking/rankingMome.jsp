@@ -15,7 +15,7 @@
 }
 .h5{
 	font-family: 'Jua', sans-serif;
-	height:20px;
+	height:10px;
 }
 .h6{
 	font-family: 'Noto Sans KR', sans-serif;

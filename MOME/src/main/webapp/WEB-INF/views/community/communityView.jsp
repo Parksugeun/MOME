@@ -35,9 +35,10 @@
 	<div id="viewselect1">
 			
 			<input type="button" value="목록" id="viewbutton1" onclick="location.href='/community/communityList?nowPage=${pVO.nowPage }<c:if test='${pVO.searchWord!=null }'>&searchKey=${pVO.searchKey}&searchWord=${pVO.searchWord}</c:if>'"/>
+			<c:if test="${vo.nickname==logId}">
 			<input type="button" value="수정" id="viewbutton1" onclick="location.href='/community/communityEdit/${vo.no }'"/>
 			<input type="button" value="삭제" id="viewbutton1" onclick="location.href='javascript:communityDel();'"/>
-			
+			</c:if>
 			<!--	<c:if test="${vo.nickname==logId}">-->
 			<!--  </c:if>	-->
 		</div>
