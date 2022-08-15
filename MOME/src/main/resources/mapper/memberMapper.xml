@@ -3,28 +3,20 @@
   PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.mome.myapp.dao.MemberDAO">
-	 
-	
 
-	
+
+	<!-- 회원가입 -->
 	<insert id="memberWrite">
 		insert into mome.member(username, userpwd, useremail, usertel, nickname ) values(#{username},#{userpwd},#{useremail},#{usertel},#{nickname})
 	</insert>
-	
-	
-	
-	
-	
+	<!-- 로그인 -->
 	<select id="loginOk" resultType="MemberVO">
 		select useremail, nickname from mome.member where useremail=#{useremail} and userpwd=#{userpwd}
 	</select>
-	
+	<!-- 로그인 한 회원 선택 -->
 	<select id="getMember" resultType="MemberVO">
 		select userid, username, tel, email, zipcode, addr, detailaddr from member where userid=#{param1}
 	</select>
 	
-	<update id="memberEditOk">
-		update member set tel=#{tel}, email=#{email}, zipcode=#{zipcode}, addr=#{addr}, detailaddr=#{detailaddr} where userid=#{userid} and userpwd=#{userpwd}
-	</update>
-
+	
 </mapper>

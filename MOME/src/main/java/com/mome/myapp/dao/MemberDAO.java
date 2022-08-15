@@ -10,18 +10,15 @@ import com.mome.myapp.vo.MemberVO;
 @Mapper
 @Repository
 public interface MemberDAO { 
-	
-	
-	//회원가입 생성
+	// 회원가입
 	public int memberWrite(MemberVO vo);
 	
 	// 로그인
 	public MemberVO loginOk(MemberVO vo);
 	
-	//회원선택 : 로그인한 회원
+	// 로그인 한 회원 선택
 	public MemberVO getMember(String useremail);
 	
-	//회원정보 수정
-	public int memberEditOk(MemberVO vo);
+	
 
 }
