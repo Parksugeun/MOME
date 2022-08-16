@@ -18,19 +18,49 @@ public class RankingServiceImpl implements RankingService {
 
 
 
-	@Override
+/*	@Override
 	public List<RankingVO> avg_Rating(RankingVO rVO) {
 		return dao.avg_Rating(rVO);
 	}
+*/
+
+
+
+
+	@Override
+	public RankingVO getRating(RankingVO vo) {
+		return dao.getRating(vo);
+	}
 
 
 
 
 
 	@Override
-	public String getDetail(RankingVO vo) {
-		return dao.getDetail(vo);
+	public List<RankingVO> getRanking(RankingVO vo) {
+		return dao.getRanking(vo);
 	}
+
+
+
+
+
+	@Override
+	public List<RankingVO> getRankingList() {
+		return dao.getRankingList();
+	}
+
+
+
+
+
+
+
+
+	
+
+
+
 
 
 

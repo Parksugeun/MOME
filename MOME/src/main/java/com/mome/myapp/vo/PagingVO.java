@@ -3,7 +3,7 @@ package com.mome.myapp.vo;
 public class PagingVO {
 	//페이징
 	private int nowPage = 1; //현재페이지
-	private int onePageRecord = 10;// 한페이지에 출력할 레코드수
+	private int onePageRecord = 5;// 한페이지에 출력할 레코드수
 	private int totalRecord; //총레코드 수
 	private int totalPage; //총페이지 수
 	private int offsetPoint; // 페이지레코드 선택할 위치

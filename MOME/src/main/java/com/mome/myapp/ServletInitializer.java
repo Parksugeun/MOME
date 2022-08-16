@@ -1,7 +1,5 @@
 package com.mome.myapp;
 
-
-
 import java.util.Collections;
 
 import org.apache.catalina.Context;
@@ -22,14 +20,13 @@ public class ServletInitializer extends SpringBootServletInitializer {
 	protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
 		return application.sources(MomeApplication.class);
 	}
-	
 	@Bean
-	public ConfigurableServletWebServerFactory configurableServletWebServerFactory() {
+	public ConfigurableServletWebServerFactory configuraServletWebServerFactory() {
 		return new TomcatServletWebServerFactory() {
 			@Override
 			protected void postProcessContext(Context context) {
 				super.postProcessContext(context);
-				JspPropertyGroup jspPropertyGroup=new JspPropertyGroup();
+				JspPropertyGroup jspPropertyGroup = new JspPropertyGroup();
 				jspPropertyGroup.addUrlPattern("*.jsp");
 				jspPropertyGroup.addUrlPattern("*.jspf");
 				jspPropertyGroup.setPageEncoding("UTF-8");
@@ -39,10 +36,11 @@ public class ServletInitializer extends SpringBootServletInitializer {
 				jspPropertyGroup.setTrimWhitespace("true");
 				jspPropertyGroup.setDefaultContentType("text/html");
 				
-				JspPropertyGroupDescriptorImpl jspPropertyGroupDescriptor=new JspPropertyGroupDescriptorImpl(jspPropertyGroup);
-				context.setJspConfigDescriptor(new JspConfigDescriptorImpl(Collections.singletonList(jspPropertyGroupDescriptor),Collections.emptyList()));
+				JspPropertyGroupDescriptorImpl jspPropertyGroupDescriptor = new JspPropertyGroupDescriptorImpl(jspPropertyGroup);
+				context.setJspConfigDescriptor(new JspConfigDescriptorImpl(Collections.singletonList(jspPropertyGroupDescriptor), Collections.emptyList()));
+						
+				
 			}
 		};
 	}
-
 }

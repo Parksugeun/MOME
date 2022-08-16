@@ -1,11 +1,242 @@
 @charset "UTF-8";
-
-/* 전체 스타일 적용 */
-body{  /*위, 좌우 여백 없게 설정 */
+body, ul, li{
 	margin:0;
 	padding:0;
-	background-image:url(../img/mainbackground01.jpg), url(../img/mainbackground02.jpg), url(../img/mainbackground03.jpg);  /*배경에 이미지 넣기*/ 
+	list-style-type:none;
+	
 }
+body{
+	background-image:url(../img/mainbackground01.jpg), url(../img/mainbackground02.jpg), url(../img/mainbackground03.jpg);
+}
+
+.container1{
+	width:100%;
+	overflow:auto;
+	margin:0 auto;
+	padding: 5 ;
+	background:url("/img/main.png");
+	height:100%;
+}
+
+#board1{
+	background-color:white;
+	font-family: 'Noto Sans KR', sans-serif;
+	font-size:1.1em;
+	margin:50px auto;
+	border-radius:10px;
+	overflow:auto;
+	width:1200px;
+	height: 550px;
+}
+#community1{
+	width:1200px;
+	margin: 0 50 0 0;
+	padding: 0 10 0 10;
+}
+#boardview1{
+	background-color:white;
+	font-family: 'Noto Sans KR', sans-serif;
+	font-size:1.1em;
+	border-radius:10px;
+	overflow:auto;
+	padding:30 150;
+	width:1200px;
+	height: 500px;
+	margin:0 auto;
+}
+
+#viewselect1{
+	margin:20 0 4 0;
+	padding:15px;
+}
+#writeedit1{
+	background-color:white;
+	font-family: 'Noto Sans KR', sans-serif;
+	font-size:1.1em;
+	margin:50 350;
+	border-radius:10px;
+	overflow:auto;
+	padding:30px;
+	width:1200px;
+}
+
+#boardview1>ul>li{
+	margin: 0 0;
+    padding: 0 0;
+    border : 0;
+    display :inline-block;
+    overflow:auto;
+}
+#boardview1>ul>li:nth-child(-n+3){
+    display :inline-block;
+    overflow:auto;
+    text-align: right;
+}
+
+.h1{ text-align:center;
+	font-family: 'Jua', sans-serif;
+}
+
+h2{ text-align:left;
+	
+}
+a:link, a:visited, a:hover{
+	text-decoration:none;
+	color:#333;
+}
+.button1{
+	background-color:#F98169;
+	border-color:#F98169;
+	width:150px;
+	height:50px;
+	padding:3 3;
+	font-family: 'Jua', sans-serif;
+	font-size: 1.6em;
+	margin:30px;
+	color:white;
+	border-radius:10px;
+	border-width:1px;
+	padding:5px;
+}
+#textwrite1{
+	font-family: 'Noto Sans KR', sans-serif;
+	font-size: 1.3em;
+	margin:50 300;
+	padding:20px;
+}
+#content1, #subject1{
+	width:800px;
+	margin:10px;
+	font-size: 15px;
+	border: 0;
+	border-radius: 15px;
+	outline: none;
+	padding-left: 10px;
+	background-color: rgb(233, 233, 233);
+	padding:20px;
+}
+#multiDel1, #sc1, #viewbutton1, #wedit1{
+	background-color:#F98169;
+	border-color:#F98169;
+	color:white;
+	font-family: 'Noto Sans KR', sans-serif;
+	height :30;
+	border-radius:10px;
+	border-width:1px;
+}
+
+#textok1{
+	background-color:#F98169;
+	border-color:#F98169;
+	color:white;
+	font-family: 'Noto Sans KR', sans-serif;
+	height :40;
+	border-radius:10px;
+	border-width:1px;
+	width: 100px;
+	float: right;
+}
+#searchFrm1{
+	margin:100px 0px -400px 10px;
+	
+}
+#listsearch1{
+	height:50px;
+	width:700px;
+}
+#write1{
+	float:right;
+	height:70px;
+	width:250px;
+	margin: -90px 20px 200px auto;
+
+}
+#searchword1 {
+  width: 300px;
+  height: 32px;
+  font-size: 15px;
+  border: 0;
+  border-radius: 15px;
+  outline: none;
+  padding-left: 10px;
+  background-color: rgb(233, 233, 233);
+}
+#mainMenu1>ul{
+	width:1200px;
+	margin:0 auto;
+}
+
+#mainMenu1 li{
+	float:left;
+	width:150px;
+	height:50px;
+	line-height:50px;
+	font-size:1.2em;
+	text-align:center;
+	font-family: 'Jua', sans-serif;
+	color:white;
+}
+#mainMenu1 {
+	background-color:#F98169;
+}
+#mainMenu1 ul{
+	overflow:auto;
+}
+
+
+#header1{
+	width:1200px;
+	text-align:center;
+	overflow:auto;
+	margin: 0 auto;
+	height: 150px;
+}
+#nav1{
+	width: 1200px;
+	height:200px;
+	margin:0 auto;
+
+}
+#picture1>li>img{
+	width:295.79px;
+	height:200px;
+	text-align-last:center;
+}
+#ment1>li{
+	width:1200px;
+}
+#section1{
+	width:50%;
+	overflow:hidden;
+	float:left;
+	height:600px;
+	text-align:center;
+	
+
+}
+#aside1{
+	width:50%;
+	height:600px;
+	float:right;
+	overflow:hidden;
+	text-align:center;
+}
+.h11{
+	text-align:center;
+	font-family: 'Jua', sans-serif;
+	line-height:100px;
+	height:100px;
+}
+.h12{
+	text-align:center;
+	font-family: 'Jua', sans-serif;
+	height:100px;
+	line-height:100px;
+}
+.footer{
+
+}
+
 /* 상단 탭 메뉴 스타일 적용 */
 .main-container2{ /* 상단 탭 메뉴 스타일 적용 */
 	user-select:none; 

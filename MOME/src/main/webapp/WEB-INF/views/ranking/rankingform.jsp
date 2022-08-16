@@ -146,9 +146,15 @@ $(function(){
 				<span class="fa fa-star checked"></span>
 				<span class="fa fa-star checked"></span>
 				<span class="fa fa-star"></span> 4.0
-				<h6 class="h6">짜장면은 가장 대표적인 중식으로 양파 등 채소와 돼지고기에 춘장을 넣어 식용유와 함께 볶은 양념을 굵은 국수에 비벼서 먹는 한국식 중국 요리입니다. 요리방식과 재료에 따라 간짜장, 삼선짜장, 유니짜장, 사천짜장, 쟁반짜장 등 다양한 종류가 있으며 이사를 갔을 때 자주 먹는 음식입니다.</h6>
+				<h6 class="h6"> 
+				<c:forEach var="vo" items="${list }">
+					${vo.foodname } ${vo.star } 
+					
+				</c:forEach>
+				</h6>
+				<span></span>
 		</div>
 	</div>
 
-	
+
 </div>

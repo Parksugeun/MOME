@@ -1,21 +1,20 @@
 package com.mome.myapp.vo;
 
-public class MemberVO { // MySQL 데이터베이스에 저장된 값들
+public class MemberVO {
 	private String username;
+	
 	private String userpwd;
 	private String useremail;
+	
 	private String usertel;
+	
 	private String joindate;
 	private String nickname;
-	
-	
 	@Override
 	public String toString() {
 		return "MemberVO [username=" + username + ", userpwd=" + userpwd + ", useremail=" + useremail + ", usertel="
 				+ usertel + ", joindate=" + joindate + ", nickname=" + nickname + "]";
 	}
-	
-	
 	public String getUsername() {
 		return username;
 	}
@@ -52,6 +51,7 @@ public class MemberVO { // MySQL 데이터베이스에 저장된 값들
 	public void setNickname(String nickname) {
 		this.nickname = nickname;
 	}
+
 	
 
 }

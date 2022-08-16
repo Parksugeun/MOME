@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+<mapper namespace="com.mome.myapp.dao.MenuDAO">
+	<select id="menuList" resultType="MenuVO">
+		select no, foodname, img, categories, detail from menu order by no desc 
+	</select>
+	<select id="menuKorean" resultType="MenuVO">
+		select no, foodname, img, categories, detail from menu where categories='hansik' order by no desc 
+	</select>
+	<select id="menuDessert" resultType="MenuVO">
+		select no, foodname, img, categories, detail from menu where categories='dessert' order by no desc 
+	</select>
+	<select id="menuYasik" resultType="MenuVO">
+		select no, foodname, img, categories, detail from menu where categories='yasik' order by no desc 
+	</select>
+	<select id="menuFastfood" resultType="MenuVO">
+		select no, foodname, img, categories, detail from menu where categories='fastfood' order by no desc 
+	</select>
+	<select id="menuBunsik" resultType="MenuVO">
+		select no, foodname, img, categories, detail from menu where categories='bunsik' order by no desc 
+	</select>
+	<select id="menuAnju" resultType="MenuVO">
+		select no, foodname, img, categories, detail from menu where categories='anju' order by no desc 
+	</select>
+	<select id="menuIlsik" resultType="MenuVO">
+		select no, foodname, img, categories, detail from menu where categories='Ilsik' order by no desc 
+	</select>
+	<select id="menuBoyangsik" resultType="MenuVO">
+		select no, foodname, img, categories, detail from menu where categories='boyangsik' order by no desc 
+	</select>
+	<select id="menuYangsik" resultType="MenuVO">
+		select no, foodname, img, categories, detail from menu where categories='yangsik' order by no desc 
+	</select>
+	<select id="menuVegan" resultType="MenuVO">
+		select no, foodname, img, categories, detail from menu where categories='vegan' order by no desc 
+	</select>
+	<select id="menuJungsik" resultType="MenuVO">
+		select no, foodname, img, categories, detail from menu where categories='jungsik' order by no desc 
+	</select>
+	<select id="menuAsian" resultType="MenuVO">
+		select no, foodname, img, categories, detail from menu where categories='asian' order by no desc 
+	</select>
+	<select id="menuSearchOk" resultType="MenuVO">
+		select no, foodname, img, categories, detail from menu order by rand()
+	</select>
+		<select id="menuRanking" resultType="MenuVO">
+		select foodname, detail from menu
+	</select>
+</mapper>

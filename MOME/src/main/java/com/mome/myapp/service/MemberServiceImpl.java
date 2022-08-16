@@ -14,19 +14,28 @@ public class MemberServiceImpl implements MemberService {
 	@Inject
 	MemberDAO dao;
 
+	 
+
+
+
 	@Override
-	public int memberWrite(MemberVO vo) { // 회원가입
+	public int memberWrite(MemberVO vo) {
 		return dao.memberWrite(vo);
 	}
 
 	@Override
-	public MemberVO loginOk(MemberVO vo) { // 로그인
+	public MemberVO loginOk(MemberVO vo) {
 		return dao.loginOk(vo);
 	}
 
 	@Override
-	public MemberVO getMember(String useremail) { // 로그인 한 회원 선택
+	public MemberVO getMember(String useremail) {
 		return dao.getMember(useremail);
+	}
+
+	@Override
+	public int memberEditOk(MemberVO vo) {
+		return dao.memberEditOk(vo);
 	}
 
 }

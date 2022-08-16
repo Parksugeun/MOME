@@ -18,7 +18,7 @@
 	<h1 class="h1">글내용보기</h1>
 	
 	<div id="boardview1">
-		<ul>
+		<ul style="padding: 10 50; margin: 10px 20px;">
 			<h5><li>no: ${vo.no }</li>
 				<li>닉네임: ${vo.nickname }<hr/></li>
 			

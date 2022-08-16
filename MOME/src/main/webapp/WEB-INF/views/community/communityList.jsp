@@ -53,7 +53,7 @@
 	});
 </script>
 <div class="container1">
-	<h1 class="h1">자유게시판</h1>
+	<h1 class="h1" style="margin:20px;">자유게시판</h1>
 	
 	<div id="board1">		
 		<!--  

@@ -65,7 +65,11 @@
 		$("#log").submit(function(){
 			if($("#useremail").val()==""){
 				alert("이메일을 입력하세요!");
-				return false; //다음으로 가면 안되기때문
+				return false;
+			}
+			if($("#nickname").val()==""){
+				alert("닉네임을 입력하세요!");
+				return false;
 			}
 			if($("#userpwd").val()==""){
 				alert("비밀번호를 입력하세요!");

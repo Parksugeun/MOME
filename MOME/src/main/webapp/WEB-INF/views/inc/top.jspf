@@ -27,9 +27,9 @@
                 </div>
                 <ul class="menu clearfix">
                     <li class="menu-item2"><a href="/">홈</a></li>
-                    <li class="menu-item2"><a href="#">MOME랭킹</a></li>
-                    <li class="menu-item2"><a href="#">맞춤메뉴추천</a></li>
-                    <li class="menu-item2"><a href="#">자유게시판</a></li>
+                    <li class="menu-item2"><a href="/ranking/rankingMome">MOME랭킹</a></li>
+                    <li class="menu-item2"><a href="/menu/menuRecommandation">맞춤메뉴추천</a></li>
+                    <li class="menu-item2"><a href="/community/communityList">자유게시판</a></li>
                     
                     
                     <!-- 로그인 버튼 -->

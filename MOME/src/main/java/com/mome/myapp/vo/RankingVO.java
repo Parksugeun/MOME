@@ -4,21 +4,41 @@ import java.util.List;
 
 public class RankingVO {
 	
-	private Double rating;
+	private double rating;
 	private String username;
 	private String foodname;
-	private String detail;
-	private String img;
+//	private String detail;
+//	private String img;
 	
 	// 레이팅 평균값
-	private List<RankingVO> avg_Rating;
+//	private List<RankingVO> avg_Rating;
+	//랭킹
+	private int ranking;
+	//점수평균값
+	private double star;
+	
 	
 	
 	
 	@Override
 	public String toString() {
-		return "RankingVO [rating=" + rating + ", username=" + username + ", foodname=" + foodname + ", detail="
-				+ detail + ", img=" + img + ", avg_Rating=" + avg_Rating + "]";
+		return "RankingVO [rating=" + rating + ", username=" + username + ", foodname=" + foodname + ", ranking="
+				+ ranking + ", star=" + star + "]";
+	}
+	public int getRanking() {
+		return ranking;
+	}
+	public void setRanking(int ranking) {
+		this.ranking = ranking;
+	}
+	public double getStar() {
+		return star;
+	}
+	public void setStar(double star) {
+		this.star = star;
+	}
+	public void setRating(double rating) {
+		this.rating = rating;
 	}
 	public Double getRating() {
 		return rating;
@@ -38,6 +58,7 @@ public class RankingVO {
 	public void setFoodname(String foodname) {
 		this.foodname = foodname;
 	}
+/*
 	public String getDetail() {
 		return detail;
 	}
@@ -49,12 +70,13 @@ public class RankingVO {
 	}
 	public void setImg(String img) {
 		this.img = img;
-	}
+	}*/
+	/*
 	public List<RankingVO> getAvg_Rating() {
 		return avg_Rating;
 	}
 	public void setAvg_Rating(List<RankingVO> avg_Rating) {
 		this.avg_Rating = avg_Rating;
-	}
+	}*/
 	
 }
